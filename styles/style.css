@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap');
+
+:root {
+    --colour-white: hsl(252, 30%, 100%);
+    --colour-light: hsl(252, 30%, 95%);
+    --colour-gray: hsl(252, 15%, 65%);
+    --colour-primary: hsl(252, 75%, 60%);
+    --colour-secondary: hsl(252, 100%, 90%);
+    --colour-sucess: hsl(120, 95%, 65%);
+    --colour-danger: hsl(0, 95%, 65%);
+    --colour-dark: hsl(252, 30%, 17%);
+    --colour-black: hsl(252, 30%, 10%);
+
+    --border-radius: 2rem;
+    --card-border-radius: 1rem;
+    --btn-padding: 0.6rem 2rem;
+    --search-padding: 0.6rem 1rem;
+    --card-padding: 1rem;
+
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--colour-dark);
+    background: var(--colour-light);
+    overflow-x: hidden;
+}
+
+/* General Style */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.profile-photo {
+    width: 2.7rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background: var(--colour-primary);
+    color: #FFFFFF;
+}
+
+.text bold {
+    font-weight: 500;
+}
+
+.text-muted {
+    color: var(--colour-gray);
+}
+
+/* Styling the navigation bar */
+
+nav {
+    width: 100%;
+    background: var(--colour-white);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .search-bar {
+    display: flex;
+    background: var(--colour-light);
+    border-radius: var(--border-radius);
+    padding: var(--search-padding);
+}
+
+nav .search-bar input[type="search"] {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: var(--colour-dark);
+}
+
+nav .search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+nav .search-bar input[type="search"]::placeholder {
+    color: var(--colour-gray);
+}
+
+nav .create {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
