@@ -100,6 +100,7 @@ nav .container {
 }
 
 nav .search-bar {
+    display: flex;
     background: var(--colour-light);
     border-radius: var(--border-radius);
     padding: var(--search-padding);
@@ -111,6 +112,12 @@ nav .search-bar input[type="search"] {
     margin-left: 1rem;
     font-size: 0.9rem;
     color: var(--colour-dark);
+}
+
+nav .search-bar input {
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
 }
 
 nav .search-bar input[type="search"]::placeholder {
