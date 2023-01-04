@@ -153,6 +153,7 @@ main .container .left {
     height: max-content;
     position: sticky;
     top: var(--sticky-top-left);
+    min-width: 250px;
 }
 
 main .container .left .profile {
@@ -184,14 +185,14 @@ main .container .left .profile {
     background: var(--colour-light);
 }
 
-.left .sidebar svg {
+.left .sidebar i {
     font-size: 1.4rem;
     color: var(--colour-gray);
     margin-left: 2rem;
     position: relative;
 }
 
-.left .sidebar .notification-count {
+.left .sidebar i .notification-count {
     background: var(--colour-danger);
     color: #FFFFFF;
     font-size: 0.7rem;
@@ -199,8 +200,8 @@ main .container .left .profile {
     border-radius: 0.8rem;
     padding:  0.1rem 0.4rem;
     position: absolute;
-    top: 0.7999999999999998rem;
-    right: 13.4rem;
+    top: -0.2rem;
+    right: -0.3rem;
 }
 
 .left .sidebar h3 {
@@ -212,7 +213,7 @@ main .container .left .profile {
     background: var(--colour-light);
 }
 
-.left .sidebar .active svg, .left .sidebar .active h3 {
+.left .sidebar .active i, .left .sidebar .active h3 {
     color: var(--colour-primary);
 }
 
@@ -254,7 +255,7 @@ main .container .left .profile {
     padding: var(--card-padding);
     box-shadow: 0 0 2rem hsl(var(--colour-primary), 75%, 60%, 25%);
     z-index: 8;
-    display: none; 
+    display: none;
 }
 
 .left .notification-popup::before {
