@@ -20,13 +20,13 @@
                     TMF's Social
                 </h2>
                 <div class="search-bar">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg>
-                    <input text="search" placeholder="Search for creator, inspiration and projects">
+                    <i class="uil uil-search"></i>
+                    <input type="search" placeholder="Search for inspiration and projects...">
                 </div>
                 <div class="create">
                     <label class="btn btn-primary" for="create post">Create</label>
                     <div class="profile-photo">
-                        <img src="assets/profile1-44x44.jpg">
+                        <img src="assets/profile_img-88x88/profile1-88x88.jpg">
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                     <!--Profile Section-->
                     <a class="profile">
                         <div class="profile-photo">
-                            <img src="./assets/profile1-44x44.jpg" />
+                            <img src="./assets/profile_img-88x88/profile1-88x88.jpg" />
                         </div>
                         <div class="handle">
                             <h4>Ren Lum-Fao</h4>
@@ -206,7 +206,7 @@
                             <div class="head">
                                 <div class="user">
                                     <div class="profile-photo">
-                                        <img src="./assets/profile5-44x44.jpg">
+                                        <img src="./assets/profile_img-88x88/profile5-88x88.jpg">
                                     </div>
                                     <div class="ingo">
                                         <h3>Frosty</h3>
@@ -247,7 +247,7 @@
                             <div class="head">
                                 <div class="user">
                                     <div class="profile-photo">
-                                        <img src="./assets/profile2-44x44.jpg">
+                                        <img src="./assets/profile_img-88x88/profile2-88x88.jpg">
                                     </div>
                                     <div class="ingo">
                                         <h3>Tayyab Javed</h3>
@@ -288,7 +288,7 @@
                             <div class="head">
                                 <div class="user">
                                     <div class="profile-photo">
-                                        <img src="./assets/profile4-44x44.jpg">
+                                        <img src="./assets/profile_img-88x88/Profile4-88x-88.jpg">
                                     </div>
                                     <div class="ingo">
                                         <h3>Ferhan Ahmed</h3>
@@ -329,7 +329,7 @@
                             <div class="head">
                                 <div class="user">
                                     <div class="profile-photo">
-                                        <img src="./assets/profile1-44x44.jpg">
+                                        <img src="./assets/profile_img-88x88/profile1-88x88.jpg">
                                     </div>
                                     <div class="ingo">
                                         <h3>Ren Lum-Fao</h3>
@@ -369,14 +369,196 @@
                     <!--End of The Feeds Section-->
                 </div>
                 <!--End of Middle Section-->
-                
-
                 <!--Right Section-->
                 <div class="right">
-                    
+                    <!--Start of Messages-->
+                    <div class="messages">
+                        <div class="heading">
+                            <h4>Messages</h4><i class="uil uil-edit"></i>
+                        </div>
+                        <!--Search Bar-->
+                        <div class="search-bar">
+                            <i class="uil uil-search"></i>
+                            <input type="search" placeholder="Search message..." id="message-search">
+                        </div>
+                        <!--End of Search Bar-->
+                        <!--Messages Category-->
+                        <div class="category">
+                            <h6 class="active">Primary</h6>
+                            <h6>General</h6>
+                            <h6 class="message-requests">Requests(7)</h6>
+                        </div>
+                        <!--End of Messages Category-->
+                        <!--Message One-->
+                        <div class="message">
+                            <div class="profile-photo">
+                                <img src="./assets/profile_img-88x88/Profile4-88x-88.jpg" >
+                            </div>
+                            <div class="message-body">
+                                <h5>Ferhan Ahmed</h5>
+                                <p class="text-muted">I love my cars too much 😍</p>
+                            </div>
+                        </div>
+                        <!--Message Two-->
+                        <div class="message">
+                            <div class="profile-photo">
+                                <img src="./assets/profile_img-88x88/profile2-88x88.jpg" >
+                                <div class="active"></div>
+                            </div>
+                            <div class="message-body">
+                                <h5>Tayyab Javed</h5>
+                                <p class="text-bold">Hey Check Out My Bird 🦜</p>
+                            </div>
+                        </div>
+                        <!--Message Three-->
+                        <div class="message">
+                            <div class="profile-photo">
+                                <img src="./assets/profile_img-88x88/profile7-88x88.jpg" >
+                            </div>
+                            <div class="message-body">
+                                <h5>Warm Soda</h5>
+                                <p class="text-muted">Look at my doggy 🐶</p>
+                            </div>
+                        </div>
+                        <!--Message Four-->
+                        <div class="message">
+                            <div class="profile-photo">
+                                <img src="./assets/profile_img-88x88/profile6-88x88.jpg" >
+                                <div class="active"></div>
+                            </div>
+                            <div class="message-body">
+                                <h5>Sheikhba Mohammed</h5>
+                                <p class="text-bold">🐍 Hey, stop ignoring me!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End of Message-->
+                    <!--Friend Request-->
+                    <div class="friend-requests">
+                        <h4>Requests</h4>
+                        <div class="request">
+                            <div class="info">
+                                <div class="profile-photo">
+                                    <img src="./assets/profile_img-88x88/profile5-88x88.jpg">
+                                </div>
+                                <div>
+                                    <h5>Frosty</h5>
+                                    <p class="text-muted">
+                                       8 mutual friends 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <button class="btn btn-primary">
+                                    Accept
+                                </button>
+                                <button class="btn">
+                                    Decline
+                                </button>
+                            </div>
+                        </div>
+                        <div class="request">
+                            <div class="info">
+                                <div class="profile-photo">
+                                    <img src="./assets/profile_img-88x88/profile7-88x88.jpg">
+                                </div>
+                                <div>
+                                    <h5>Warm Soda</h5>
+                                    <p class="text-muted">
+                                       4 mutual friends 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <button class="btn btn-primary">
+                                    Accept
+                                </button>
+                                <button class="btn">
+                                    Decline
+                                </button>
+                            </div>
+                        </div>
+                        <div class="request">
+                            <div class="info">
+                                <div class="profile-photo">
+                                    <img src="./assets/profile_img-88x88/profile3-88x88.jpg">
+                                </div>
+                                <div>
+                                    <h5>Spider-Man</h5>
+                                    <p class="text-muted">
+                                       1 mutual friends 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="action">
+                                <button class="btn btn-primary">
+                                    Accept
+                                </button>
+                                <button class="btn">
+                                    Decline
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!--End of Right Section-->
             </div>
         </main>
+
+        <div class="customize-theme">
+            <div class="card">
+                <h2>Customize your view</h2>
+                <p class="text-muted">Manage your font size, color and background.</p>
+
+                <!--Font Sizes Section-->
+                <div class="font-size">
+                    <h4>Font Size</h4>
+                    <div>
+                        <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                    </div>
+                </div>
+                <!--End of Font Size Section-->
+                <!--Primary Colours Section-->
+                <div class="colour">
+                    <h4>Colour</h4>
+                    <div class="choose-colour">
+                        <span class="colour-1 active"></span>
+                        <span class="colour-2"></span>
+                        <span class="colour-3"></span>
+                        <span class="colour-4"></span>
+                        <span class="colour-5"></span>
+                    </div>
+                </div>
+                <!--End of Primary Colours Section-->
+                <!--Background Colours-->
+                <div class="background">
+                    <h4>Background</h4>
+                    <div class="choose-bg">
+                        <div class="bg-1 active">
+                            <span></span>
+                            <h5 for="bg-1">Light</h5>
+                        </div>
+                        <div class="bg-2">
+                            <span></span>
+                            <h5 for="bg-2">Dim</h5>
+                        </div>
+                        <div class="bg-3">
+                            <span></span>
+                            <h5 for="bg-3">Lights Out</h5>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Background Colours Section-->
+            </div>
+        </div>
         
         <script src=""></script>
     </body>
