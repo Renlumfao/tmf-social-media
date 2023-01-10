@@ -349,3 +349,25 @@ main .container .left .profile {
 
 /* Styling the Create Post */
 
+.middle .create-post {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    background: var(--colour-white);
+    padding: 0.4rem var(--card-padding);
+    border-radius: var(--border-radius);
+}
+
+.middle .create-post input[type='text'] {
+    justify-self: start;
+    width: 100%;
+    padding-left: 1rem;
+    background: transparent;
+    color: var(--colour-dark);
+    margin-right: 1rem;
+}
+
+/* Styling the Feeds */
+
