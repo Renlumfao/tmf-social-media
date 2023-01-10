@@ -371,3 +371,70 @@ main .container .left .profile {
 
 /* Styling the Feeds */
 
+.middle .feeds .feed {
+    background: var(--colour-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+.middle .feeds .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle .feeds .user {
+    display: flex;
+    gap: 1rem;
+}
+
+.middle .feeds .photo {
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    margin: 0.7rem 0;
+}
+
+.capitalise {
+    text-transform: uppercase;
+}
+
+.middle .feeds .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+}
+
+.middle .liked-by {
+    display: flex;
+}
+
+.middle .liked-by span{
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--colour-white);
+    margin-left: -0.6rem;
+}
+
+.middle .liked-by span:first-child {
+    margin: 0;
+}
+
+.middle .liked-by p {
+    margin-left: 0.5rem;
+}
+
+.middle .caption .hash-tag {
+    color: var(--colour-primary);
+    cursor: pointer;
+}
+
+.middle .caption .hash-tag:hover {
+    text-decoration: underline;
+}
