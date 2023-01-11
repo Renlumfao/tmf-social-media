@@ -244,7 +244,7 @@ main .container .left .profile {
 
 /* Styling the Notification Pop Up */
 
-.left .notification-popup {
+.left .notifications-popup {
     position: absolute;
     top: 0;
     left: 110%;
@@ -257,7 +257,7 @@ main .container .left .profile {
     display: none;
 }
 
-.left .notification-popup::before {
+.left .notifications-popup::before {
     content: "";
     width: 1.2rem;
     height: 1.2rem;
@@ -756,13 +756,13 @@ main .container .right {
 
     /* Notication Popup */
 
-    .left .notification-popup {
+    .left .notifications-popup {
         position: absolute;
         left: -20rem;
         width: 20rem;
     }
 
-    .left .notification-popup::before {
+    .left .notifications-popup::before {
         display: absolute;
         top: 1.3rem;
         left: calc(20rem - 0.6rem);
