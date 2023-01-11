@@ -1,4 +1,4 @@
-//sidebar
+// Sidebar
 const menuItems = document.querySelectorAll('.menu-item'); //selects all the divs with the class menu-item
 
 // Messages
@@ -6,6 +6,12 @@ const messagesNotification = document.querySelector('#messages-notification');
 const messages = document.querySelector('.messages');
 const message = messages.querySelectorAll('.message');
 const messageSearch = document.querySelector('#message-search');
+
+// Theme
+const theme = document.querySelector('#theme');
+const themeModal = document.querySelector('.customize-theme');
+const fontSizes = document.querySelectorAll('.choose-size span');
+var root = document.querySelector(':root');
 
 // Coding the Messages on the Sidebar
 
@@ -42,7 +48,7 @@ const searchMessage = () => {
         if(name.indexOf(val) != -1){
             chat.style.display = 'flex';
         } else{
-            chat.style.display = 'none'
+            chat.style.display = 'none';
         }
     })
 } 
@@ -57,4 +63,67 @@ messagesNotification.addEventListener('click', () => {
     setTimeout(() => {
         messages.style.boxShadow = 'none';
     }, 2000);
+})
+
+// End of Coding the Messages section.
+
+// Theme/Display Customization
+
+// open modal
+const openThemeModal = () => {
+    themeModal.style.display = 'grid';
+}
+
+// close modal
+const closeThemeModal = (e) => {
+    if(e.target.classList.contains('customize-theme')) {
+        themeModal.style.display = 'none';
+    }
+}
+
+themeModal.addEventListener('click', closeThemeModal);
+
+theme.addEventListener('click', openThemeModal);
+
+// change font size
+
+// removes active class from span or fonts size selectors
+const removeSizeSelector = () => {
+    fontSizes.forEach(size => {
+        size.classList.remove('active');
+    })
+}
+
+
+fontSizes.forEach(size => {
+    size.addEventListener('click', () => {
+        removeSizeSelector();
+        let fontSize;
+        size.classList.toggle('active');
+
+        if(size.classList.contains('font-size-1')) {
+            fontSize = '10px';
+            root.style.setProperty('----sticky-top-left', '5.4rem');
+            root.style.setProperty('----sticky-top-right', '5.4rem');
+        } else if (size.classList.contains('font-size-2')) {
+            fontSize = '13px';
+            root.style.setProperty('----sticky-top-left', '5.4rem');
+            root.style.setProperty('----sticky-top-right', '-7rem');
+        } else if (size.classList.contains('font-size-3')) {
+            fontSize = '16px';
+            root.style.setProperty('----sticky-top-left', '-2rem');
+            root.style.setProperty('----sticky-top-right', '-17rem');
+        } else if (size.classList.contains('font-size-4')) {
+            fontSize = '19px';
+            root.style.setProperty('----sticky-top-left', '-5rem');
+            root.style.setProperty('----sticky-top-right', '-25rem');
+        } else if (size.classList.contains('font-size-5')) {
+            fontSize = '22px';
+            root.style.setProperty('----sticky-top-left', '-12rem');
+            root.style.setProperty('----sticky-top-right', '-35rem');
+        }
+
+        // change font size of the root html element
+        document.querySelector('html').style.fontSize = fontSize;
+    })
 })

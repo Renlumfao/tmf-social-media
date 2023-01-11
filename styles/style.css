@@ -578,6 +578,7 @@ main .container .right {
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--colour-primary)
 }
 
 /* Styling Font Size */
@@ -735,6 +736,10 @@ main .container .right {
     .left .btn {
         display: none;
     }
+
+    .customize-theme .card {
+        width: 80vw;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -752,6 +757,15 @@ main .container .right {
         position: fixed;
         bottom: 0;
         right: 0;
+    }
+
+    .customize-theme {
+        width: 100%;
+        height: 100%;
+    }
+
+    .customize-theme .card {
+        width: 92vw;
     }
 
     /* Notication Popup */
