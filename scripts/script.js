@@ -13,6 +13,9 @@ const themeModal = document.querySelector('.customize-theme');
 const fontSizes = document.querySelectorAll('.choose-size span');
 var root = document.querySelector(':root');
 const colourPalette = document.querySelectorAll('.choose-colour span');
+const bg1 = document.querySelector('.bg-1');
+const bg2 = document.querySelector('.bg-2');
+const bg3 = document.querySelector('.bg-3');
 
 // Coding the Messages on the Sidebar
 
@@ -159,4 +162,54 @@ colourPalette.forEach(colour => {
 
         root.style.setProperty('--primary-colour-hue', primaryHue);
     })
+})
+
+// changing theme backgorund values
+let lightColourLightness;
+let whiteColourLightness;
+let darkColourLightness;
+
+
+// change background colour
+const changeBG = () => {
+    root.style.setProperty('--light-colour-lightness', lightColourLightness);
+    root.style.setProperty('--white-colour-lightness', whiteColourLightness);
+    root.style.setProperty('--dark-colour-lightness', darkColourLightness);
+}
+
+bg1.addEventListener('click', () => {
+    // add active class
+    bg1.classList.add('active');
+    // remove active class from the others
+    bg2.classList.remove('active');
+    bg3.classList.remove('active');
+    // remove customized changes from local storage
+    window.location.reload();
+})
+
+
+bg2.addEventListener('click', () => {
+    darkColourLightness = '95%';
+    whiteColourLightness = '20%';
+    lightColourLightness = '15%';
+
+    // add active class
+    bg2.classList.add('active');
+    // remove active class from the others
+    bg1.classList.remove('active');
+    bg3.classList.remove('active');
+    changeBG();
+})
+
+bg3.addEventListener('click', () => {
+    darkColourLightness = '95%';
+    whiteColourLightness = '10%';
+    lightColourLightness = '0%';
+
+    // add active class
+    bg3.classList.add('active');
+    // remove active class from the others
+    bg1.classList.remove('active');
+    bg2.classList.remove('active');
+    changeBG();
 })

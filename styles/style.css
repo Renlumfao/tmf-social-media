@@ -2,14 +2,18 @@
 
 :root {
     --primary-colour-hue: 252;
-    --colour-white: hsl(252, 30%, 100%);
-    --colour-light: hsl(252, 30%, 95%);
+    --dark-colour-lightness: 17%;
+    --light-colour-lightness: 95%;
+    --white-colour-lightness: 100%;
+
+    --colour-white: hsl(252, 30%, var(--white-colour-lightness));
+    --colour-light: hsl(252, 30%, var(--light-colour-lightness));
     --colour-gray: hsl(252, 15%, 65%);
     --colour-primary: hsl(var(--primary-colour-hue), 75%, 60%);
     --colour-secondary: hsl(252, 100%, 90%);
     --colour-sucess: hsl(120, 95%, 65%);
     --colour-danger: hsl(0, 95%, 65%);
-    --colour-dark: hsl(252, 30%, 17%);
+    --colour-dark: hsl(252, 30%, var(--dark-colour-lightness));
     --colour-black: hsl(252, 30%, 10%);
 
     --border-radius: 2rem;
