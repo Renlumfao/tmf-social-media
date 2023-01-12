@@ -12,6 +12,7 @@ const theme = document.querySelector('#theme');
 const themeModal = document.querySelector('.customize-theme');
 const fontSizes = document.querySelectorAll('.choose-size span');
 var root = document.querySelector(':root');
+const colourPalette = document.querySelectorAll('.choose-colour span');
 
 // Coding the Messages on the Sidebar
 
@@ -125,5 +126,37 @@ fontSizes.forEach(size => {
 
         // change font size of the root html element
         document.querySelector('html').style.fontSize = fontSize;
+    })
+})
+
+
+// removes active class from span or colour selectors
+const changeActiveColourClass = () => {
+    colourPalette.forEach(colourPicker => {
+        colourPicker.classList.remove('active');
+    })
+}
+
+// change primary colours
+colourPalette.forEach(colour => {
+
+    colour.addEventListener('click', () => {
+        let primary;
+        changeActiveColourClass();
+
+        if(colour.classList.contains('colour-1')){
+            primaryHue = 252;
+        } else if(colour.classList.contains('colour-2')) {
+            primaryHue = 52;
+        } else if(colour.classList.contains('colour-3')) {
+            primaryHue = 352;
+        } else if(colour.classList.contains('colour-4')) {
+            primaryHue = 152;
+        } else if(colour.classList.contains('colour-5')) {
+            primaryHue = 202;
+        }
+        colour.classList.add('active');
+
+        root.style.setProperty('--primary-colour-hue', primaryHue);
     })
 })
