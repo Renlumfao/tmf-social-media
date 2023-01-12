@@ -107,6 +107,11 @@ nav .container {
     justify-content: space-between;
 }
 
+nav .logo {
+    display: flex;
+    align-items: center;
+}
+
 .search-bar {
     display: flex;
     background: var(--colour-light);
